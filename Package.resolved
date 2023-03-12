@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftScraper",
+        "repositoryURL": "https://github.com/Nef10/SwiftScraper.git",
+        "state": {
+          "branch": null,
+          "revision": "d93707b290c6d5cf899cdcdd229a7c858f9f2f19",
+          "version": "0.6.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
