@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CompassCardDownloader  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="CompassCardDownloader  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          CompassCardDownloader Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Nef10/CompassCardDownloader">
+            <img class="header-icon" src="img/gh.png" alt="GitHub"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2FNef10.github.io%2FCompassCardDownloader%2Fdocsets%2FCompassCardDownloader.xml">
+            <img class="header-icon" src="img/dash.png" alt="Dash"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">CompassCardDownloader Reference</a>
+      <img class="carat" src="img/carat.png" alt=""/>
+      CompassCardDownloader  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CompassCardDownloader.html">CompassCardDownloader</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CompassCardDownloaderDelegate.html">CompassCardDownloaderDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            
+            <h1 id='compasscarddownloader' class='heading'>CompassCardDownloader</h1>
+
+<p><a href="https://github.com/Nef10/CompassCardDownloader/actions?query=workflow%3A%22CI%22"><img src="https://github.com/Nef10/CompassCardDownloader/workflows/CI/badge.svg?event=push" alt="CI Status"></a> <a href="https://nef10.github.io/CompassCardDownloader/"><img src="https://nef10.github.io/CompassCardDownloader/badge.svg" alt="Documentation percentage"></a> <a href="https://github.com/Nef10/CompassCardDownloader/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Nef10/CompassCardDownloader" alt="License: MIT"></a> <a href="https://github.com/Nef10/CompassCardDownloader/releases"><img src="https://img.shields.io/github/v/release/Nef10/CompassCardDownloader?label=SemVer&sort=semver" alt="Latest version"></a> <img src="https://img.shields.io/badge/platform-macOS%20%7C%20iOS-blue" alt="platforms supported: macOS | iOS"> <img src="https://img.shields.io/badge/SPM-compatible-blue" alt="SPM compatible"></p>
+<h2 id='what' class='heading'>What</h2>
+
+<p>This is a small library to download the current balance as well as transaction data from a Compass Card via web scraping and CSV export.</p>
+<h2 id='how' class='heading'>How</h2>
+
+<p>1) Create an instance and set the delegate
+2) Call <code>authorizeAndGetBalance</code> with the email and password, it will return the card number and balance
+3) Call <code>downloadCardTransactions</code> with a card number as well as the date you want to start loading transactions from
+4) Dismiss the view your delegate provided</p>
+
+<p>Please also check out the complete documentation <a href="https://nef10.github.io/CompassCardDownloader/">here</a>.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>The library supports the Swift Package Manger, so simply add a dependency in your <code>Package.swift</code>:</p>
+<pre class="highlight plaintext"><code>.package(url: "https://github.com/Nef10/CompassCardDownloader.git", .exact(from: "X.Y.Z")),
+</code></pre>
+
+<p><em>Note: as per semantic versioning all versions changes &lt; 1.0.0 can be breaking, so please use <code>.exact</code> for now</em></p>
+<h2 id='limitations' class='heading'>Limitations</h2>
+
+<p>Please note that I developed this library for my own needs. As there is no offical API, everything was reverse engineered and there may be a lot of bugs.</p>
+
+<p>Pull requests to fix bugs are otherwise enhance the library are very welcome.</p>
+<h2 id='copyright' class='heading'>Copyright</h2>
+
+<p>While my code is licensed under the <a href="https://github.com/Nef10/CompassCardDownloader/blob/main/LICENSE">MIT License</a>, the source repository may include names or other trademarks of CompassCard, TransLink or other entities; potential usage restrictions for these elements still apply and are not touched by the software license. Same applies for the API design. I am in no way affilliated with TransLink other than beeing customer.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2023 <a class="link" href="https://github.com/Nef10" target="_blank" rel="external noopener">Nef10</a>. All rights reserved. (Last updated: 2023-03-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+    </section>
+  </body>
+</html>
