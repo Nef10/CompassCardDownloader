@@ -21,6 +21,7 @@ public class CompassCardDownloader {
 
     /// Creates an instance of the CompassCardDownloader
     public init() {
+        // Do nothing
     }
 
     /// Logs into the Compass Card website and reads the current balance
